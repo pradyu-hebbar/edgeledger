@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0283f697f9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/utiliies.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Post One</title>
+</head>
+
+<body id="home">
+  <header class="hero blog">
+    <div class="navbar top" id="navbar">
+      <h1 class="logo">
+        <span class="text-primary"> <i class="fas fa-book-open"></i> Edge</span>Ledger
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <h1>Blog</h1>
+    </div>
+  </header>
+  <main>
+    <section class="post">
+      <h2>Blog Post Four</h2>
+      <p class="meta"><i class="fas fa-user"></i> Posted by <strong> Shashank Mallya</strong> | August 27 2020</p>
+      <img src="./images/blog/blog1.jpg" alt="">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat neque voluptatibus repellendus ipsa
+        provident! Quas numquam ullam, ut alias aliquid accusamus necessitatibus magni optio vero voluptatibus
+        odio tempora nostrum fugiat.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ea nemo natus unde non nostrum aliquid
+        perferendis alias eligendi amet dolores, quia repellat magnam excepturi deleniti aperiam. Assumenda omnis
+        laboriosam neque excepturi repellendus ratione porro perspiciatis sed unde autem deserunt aut quis officia ea
+        sint est, libero debitis illo. Voluptates aut in at ratione corporis iure delectus sunt nihil dignissimos.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ducimus deleniti pariatur officiis quidem porro
+        iste culpa laudantium illum repudiandae eaque, ad corrupti tempora saepe rem praesentium reprehenderit
+        aspernatur aut magni! Unde, voluptas vitae dolorem alias quas debitis sint possimus nulla sit odio, assumenda
+        similique, totam laboriosam at magnam optio?
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-youtube"></a>
+      <a href="#" class="fab fa-skype"></a>
+    </div>
+    <p>Copyright &copy; 2020 - Edgeledger</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0px)'
+          scrolled = true
+        }, 200);
+
+      } else {
+        navbar.classList.add('top');
+        scrolled = false
+      }
+    }
+  </script>
+</body>
+
+</html>
